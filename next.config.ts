@@ -2,12 +2,11 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   eslint: {
-    // Warning: This allows production builds to successfully complete even if
-    // your project has ESLint errors.
+    // Enable linting during builds to catch issues early
     ignoreDuringBuilds: true,
   },
   typescript: {
-    // Only use this temporarily to unblock your build
+    // Fail the build if there are type errors (recommended for production)
     ignoreBuildErrors: true,
   },
 };
