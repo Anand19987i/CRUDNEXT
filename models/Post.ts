@@ -2,7 +2,7 @@ import mongoose, { Model, Document, Schema, Types } from "mongoose";
 import { User } from "./User";
 
 export interface IPost extends Document {
-    _id: string;
+    id: string;
     title: string;
     content: string;
     author: string | User;

@@ -51,7 +51,7 @@ const UserProfilePage = () => {
                             No posts found.
                         </p>
                     ) : (
-                        posts.map((post) => <UserPostCard key={post._id} post={post} />)
+                        posts.map((post) => <UserPostCard key={post.id} post={post} />)
                     )}
                 </div>
             </div>

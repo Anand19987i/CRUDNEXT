@@ -32,7 +32,7 @@ const UserPostCard: React.FC<PostCardProps> = ({ post, onDelete }) => {
     try {
       const res = await axios.delete(`/api/posts/user/${post._id}`)
       if (res.status === 200) {
-        onDelete?.(post._id)
+        onDelete?.(post.id)
       }
     } catch (error) {
       console.error('Failed to delete post', error)

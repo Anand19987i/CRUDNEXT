@@ -62,7 +62,7 @@ export default function Page() {
           {posts.length === 0 ? (
             <p className="text-gray-600 text-center w-full">No posts found.</p>
           ) : (
-            posts.map((post) => <PostCard key={post._id} post={post} />)
+            posts.map((post) => <PostCard key={post.id} post={post} />)
           )}
         </div>
       </div>
